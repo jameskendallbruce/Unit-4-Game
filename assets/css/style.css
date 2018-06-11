@@ -1,0 +1,74 @@
+body {
+    background: url(../images/throneroom.png);
+    background-position: center;
+}
+
+#title {
+    font-family: 'Audiowide', cursive;
+    color: aliceblue;
+    margin: 10px 30px 10px 30px;
+}
+
+.jumbotron {
+    background-color: rgba(250, 255, 255, 0.6);
+    margin: 0 30px 20px 30px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Threat {
+    display: none;
+}
+
+.card-header {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}
+
+.fightername {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+.health {
+    font-family: 'Audiowide', cursive;
+    font-size: 22px;
+    text-align: center;
+}
+
+.card-text {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#Fighter, #Opponent {
+    height: 280px;
+    width: 200;
+    margin: auto;
+}
+
+#col-sm-3 {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.charCard {
+    background:rgb(133, 132, 132);
+    border: 2px rgb(250, 255, 255) solid;
+    padding: 20px
+}
+
+#instructions, button {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Audiowide', cursive;
+    font-size: 24px;
+    margin: auto;
+    padding: 10px;
+}
+
+.button {
+    vertical-align: center;
+
+}

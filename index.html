@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STAR WARS RPG</title>
+
+
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Ubuntu|Audiowide" rel="stylesheet">
+    <!-- link to css files. -->
+    <!-- first up is a reset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Borrowing some Bootstrap for grid layout -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Links for style css files-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- link to jQuery cdn followed by link to the jQuery js file I made -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <nav>
+
+            <header>
+                        
+                <h1 id="title">STAR WARS RPG</h1>
+            
+            </header>
+            
+        </nav>
+        
+        <div class="jumbotron jumbotron-fluid col-10 rounded">
+        
+            <!-- <div class="container"> -->
+        
+                <div class="row">
+
+                    <div class="col-sm-3 offset-sm-1">
+
+                        <h2 id="yourName" class="fightername">Your Fighter</h2>
+
+                        <img src="assets/images/blackjoker.jpg" alt="Fighter Card" class="charCard rounded" id="Fighter">
+
+                        <h3 id="yourHP" class="health"></h3>
+
+                    </div>
+
+                    <div class="col-sm-2 offset-sm-1">
+
+                        <button class="button mx-auto rounded" id="attackButton">ATTACK</button>
+
+                    </div>
+
+                    <div class="col-sm-3 offset-sm-1">
+
+                        <h2 id="enemyName" class="fightername">Your Opponent</h2>
+
+                        <img src="assets/images/redjoker.jpg" alt="Opponent Card" class="charCard rounded" id="Opponent">
+
+                        <h3 id="enemyHP" class="health"></h3>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <p id="instructions">Choose a fighter.</p>
+
+                </div>
+        
+            <!-- </div> -->
+        
+        </div>
+        
+
+        <div id="row char-list">
+
+            <div class="col-sm-2 ml-5 float-left">
+
+                <div class="card" id="Rey">
+
+                    <div class="card-header text-center">
+                        
+                        Rey
+                                  
+                    </div>
+                        
+                    <img class="card-img-top" src="assets/images/rey.jpg" alt="Rey Card" id="reyCard">
+                        
+                    <div class="card-body">
+
+                        <!-- <p class="card-text Bio">Rey hasn't been around long but she's as skilled as anyone and a well-rounded fighter. Adversaries beware.</p> -->
+                        
+                        <p class="card-text Bio">Rey is still relatively young in the force but she is a fast learner and a very well-rounded fighter.</p>
+                    
+                        <P class="card-text Threat">Rey hasn't been around long but she's as skilled as anyone and a well-rounded fighter. Adversaries beware.</P>
+
+                    </div>        
+                
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-2 offset-sm-1 float-left">
+
+                <div class="card" id="Yoda">
+
+                    <div class="card-header text-center">
+                            
+                        Yoda
+                                      
+                    </div>
+                            
+                    <img class="card-img-top" src="assets/images/yoda.jpg" alt="Yoda Card" id="yodaCard">
+                            
+                    <div class="card-body">
+                            
+                        <p class="card-text Bio">Although Yoda is ancient and unassuming, if you take the time, he can be extremely powerful.</p>
+                        
+                        <P class="card-text Threat">Don't let his size deceive you--it takes a lot to take this one down.</P>
+    
+                    </div>
+                          
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-2 offset-sm-1 float-left">
+
+                <div class="card" id="Kylo">
+
+                    <div class="card-header text-center">
+                            
+                        Kylo Ren
+                                      
+                    </div>
+                            
+                    <img class="card-img-top" src="assets/images/kylo.jpg" alt="Kylo Card" id="kyloCard">
+                            
+                    <div class="card-body">
+                            
+                        <p class="card-text Bio">Kylo Ren will stop at nothing to prove his power. What he lacks in stamina, he more than makes up for in raw rage-fueled attack.</p>
+                        
+                        <P class="card-text Threat">When Kylo attacks, he attacks hard. He is full of so much hate. Best to avoid him.</P>
+    
+                    </div>
+                          
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-2 offset-sm-1 float-left">
+
+                <div class="card" id="Boba">
+
+                    <div class="card-header text-center">
+                            
+                        Boba Fett
+                                      
+                    </div>
+                            
+                    <img class="card-img-top" src="assets/images/boba.jpg" alt="Boba Card" id="bobaCard">
+                            
+                    <div class="card-body">
+                            
+                        <p class="card-text Bio">Boba Fett may not be a jedi but his armor goes far in keeping him alive.</p>
+                        
+                        <P class="card-text Threat">He has more health than others but he doesn't have a lightsaber. Good luck.</P>
+    
+                    </div>
+                          
+                </div>
+            
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
