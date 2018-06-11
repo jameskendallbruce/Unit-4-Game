@@ -35,6 +35,109 @@
             </header>
             
         </nav>
+
+
+        <h2 id="initialInstructions">Choose a Fighter.</h2>
+
+
+        <div class="row" id="char-list-1">
+
+            <div class="col-sm-2 ml-5 float-left">
+    
+                <div class="card" id="Rey">
+    
+                    <div class="card-header text-center">
+                            
+                        Rey
+                                      
+                    </div>
+                            
+                    <img class="card-img-top" src="assets/images/rey.jpg" alt="Rey Card" id="reyCard">
+                            
+                    <div class="card-body">
+    
+                        <!-- <p class="card-text Bio">Rey hasn't been around long but she's as skilled as anyone and a well-rounded fighter. Adversaries beware.</p> -->
+                            
+                        <p class="card-text Bio">Rey is still relatively young in the force but she is a fast learner and a very well-rounded fighter.</p>
+    
+                    </div>        
+                    
+                </div>
+    
+            </div>
+    
+    
+            <div class="col-sm-2 offset-sm-1 float-left">
+    
+                <div class="card" id="Yoda">
+    
+                    <div class="card-header text-center">
+                                
+                        Yoda
+                                          
+                    </div>
+                                
+                    <img class="card-img-top" src="assets/images/yoda.jpg" alt="Yoda Card" id="yodaCard">
+                                
+                    <div class="card-body">
+                                
+                        <p class="card-text Bio">Although Yoda is ancient and unassuming, if you take the time, he can be extremely powerful.</p>
+                
+                    </div>
+                              
+                </div>
+    
+            </div>
+    
+    
+            <div class="col-sm-2 offset-sm-1 float-left">
+    
+                <div class="card" id="Kylo">
+    
+                    <div class="card-header text-center">
+                                
+                        Kylo Ren
+                                          
+                    </div>
+                                
+                    <img class="card-img-top" src="assets/images/kylo.jpg" alt="Kylo Card" id="kyloCard">
+                                
+                    <div class="card-body">
+                                
+                        <p class="card-text Bio">Kylo Ren will stop at nothing to prove his power. What he lacks in stamina, he more than makes up for in raw rage-fueled attack.</p>
+    
+                    </div>
+                              
+                </div>
+    
+            </div>
+    
+    
+            <div class="col-sm-2 offset-sm-1 float-left">
+    
+                <div class="card" id="Boba">
+    
+                    <div class="card-header text-center">
+                                
+                        Boba Fett
+                                          
+                    </div>
+                                
+                    <img class="card-img-top" src="assets/images/boba.jpg" alt="Boba Card" id="bobaCard">
+                                
+                    <div class="card-body">
+                                
+                        <p class="card-text Bio">Boba Fett may not be a jedi but his armor goes far in keeping him alive.</p>
+    
+                    </div>
+                              
+                </div>
+                
+            </div>
+
+        </div>
+
+
         
         <div class="jumbotron jumbotron-fluid col-10 rounded">
         
@@ -72,7 +175,7 @@
 
                 <div class="row">
 
-                    <p id="instructions">Choose a fighter.</p>
+                    <p id="instructions"></p>
 
                 </div>
         
@@ -81,11 +184,13 @@
         </div>
         
 
-        <div id="row char-list">
+        <div class="row" id="char-list-2">
 
-            <div class="col-sm-2 ml-5 float-left">
+            <div class="col-sm-1 float-left"></div>
 
-                <div class="card" id="Rey">
+            <div class="col-sm-2 offset-sm-1 float-left" id="ReyChar">
+
+                <div class="card" id="BadRey">
 
                     <div class="card-header text-center">
                         
@@ -93,15 +198,13 @@
                                   
                     </div>
                         
-                    <img class="card-img-top" src="assets/images/rey.jpg" alt="Rey Card" id="reyCard">
+                    <img class="card-img-top" src="assets/images/rey.jpg" alt="Rey Card" id="reyCard2">
                         
                     <div class="card-body">
 
                         <!-- <p class="card-text Bio">Rey hasn't been around long but she's as skilled as anyone and a well-rounded fighter. Adversaries beware.</p> -->
                         
                         <p class="card-text Bio">Rey is still relatively young in the force but she is a fast learner and a very well-rounded fighter.</p>
-                    
-                        <P class="card-text Threat">Rey hasn't been around long but she's as skilled as anyone and a well-rounded fighter. Adversaries beware.</P>
 
                     </div>        
                 
@@ -109,10 +212,9 @@
 
             </div>
 
+            <div class="col-sm-2 offset-sm-1 float-left" id="YodaChar">
 
-            <div class="col-sm-2 offset-sm-1 float-left">
-
-                <div class="card" id="Yoda">
+                <div class="card" id="BadYoda">
 
                     <div class="card-header text-center">
                             
@@ -120,14 +222,12 @@
                                       
                     </div>
                             
-                    <img class="card-img-top" src="assets/images/yoda.jpg" alt="Yoda Card" id="yodaCard">
+                    <img class="card-img-top" src="assets/images/yoda.jpg" alt="Yoda Card" id="yodaCard2">
                             
                     <div class="card-body">
                             
                         <p class="card-text Bio">Although Yoda is ancient and unassuming, if you take the time, he can be extremely powerful.</p>
-                        
-                        <P class="card-text Threat">Don't let his size deceive you--it takes a lot to take this one down.</P>
-    
+            
                     </div>
                           
                 </div>
@@ -135,9 +235,9 @@
             </div>
 
 
-            <div class="col-sm-2 offset-sm-1 float-left">
+            <div class="col-sm-2 offset-sm-1 float-left" id="KyloChar">
 
-                <div class="card" id="Kylo">
+                <div class="card" id="BadKylo">
 
                     <div class="card-header text-center">
                             
@@ -145,24 +245,21 @@
                                       
                     </div>
                             
-                    <img class="card-img-top" src="assets/images/kylo.jpg" alt="Kylo Card" id="kyloCard">
+                    <img class="card-img-top" src="assets/images/kylo.jpg" alt="Kylo Card" id="kyloCard2">
                             
                     <div class="card-body">
                             
                         <p class="card-text Bio">Kylo Ren will stop at nothing to prove his power. What he lacks in stamina, he more than makes up for in raw rage-fueled attack.</p>
-                        
-                        <P class="card-text Threat">When Kylo attacks, he attacks hard. He is full of so much hate. Best to avoid him.</P>
-    
+
                     </div>
                           
                 </div>
 
             </div>
 
+            <div class="col-sm-2 offset-sm-1 float-left" id="BobaChar">
 
-            <div class="col-sm-2 offset-sm-1 float-left">
-
-                <div class="card" id="Boba">
+                <div class="card" id="BadBoba">
 
                     <div class="card-header text-center">
                             
@@ -170,14 +267,12 @@
                                       
                     </div>
                             
-                    <img class="card-img-top" src="assets/images/boba.jpg" alt="Boba Card" id="bobaCard">
+                    <img class="card-img-top" src="assets/images/boba.jpg" alt="Boba Card" id="bobaCard2">
                             
                     <div class="card-body">
                             
                         <p class="card-text Bio">Boba Fett may not be a jedi but his armor goes far in keeping him alive.</p>
-                        
-                        <P class="card-text Threat">He has more health than others but he doesn't have a lightsaber. Good luck.</P>
-    
+
                     </div>
                           
                 </div>

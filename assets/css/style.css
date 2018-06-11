@@ -9,9 +9,21 @@ body {
     margin: 10px 30px 10px 30px;
 }
 
+#initialInstructions {
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Audiowide', cursive;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
 .jumbotron {
     background-color: rgba(250, 255, 255, 0.6);
-    margin: 0 30px 20px 30px;
+    margin: auto;
+    margin-bottom: 30px;
     justify-content: center;
     padding: 10px;
 }
@@ -71,4 +83,24 @@ body {
 .button {
     vertical-align: center;
 
+}
+
+#ReyChar {
+    display: none;
+}
+
+#YodaChar {
+    display: none;
+}
+
+#KyloChar {
+    display: none;
+}
+
+#BobaChar {
+    display: none;
+}
+
+#char-list-1 {
+    margin-bottom: 30px;
 }

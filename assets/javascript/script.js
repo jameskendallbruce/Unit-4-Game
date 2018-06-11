@@ -65,6 +65,10 @@ function placeFighter() {
 
     console.log("Base Attack: " + baseAttack);
 
+    $("#instructions").text("Choose an Opponent.")
+
+    $("#initialInstructions").hide();
+
 };
 
 function placeOpponent() {
@@ -79,10 +83,9 @@ function placeOpponent() {
 
 };
  
-// if (yourChar !== Characters[0]) {
+// selecting your character:
 
-// note: we still need to sort out bios and threats
-// when Rey is clicked...
+
 $("#Rey").on("click", function() {
 
 
@@ -105,40 +108,21 @@ $("#Rey").on("click", function() {
 
         placeFighter();
 
-        $("#reyCard").attr("src", "assets/images/cardback.jpg");
+        $("#char-list-1").css("display", "none");
+
+        $("#YodaChar").show();
+
+        $("#KyloChar").show();
+
+        $("#BobaChar").show();
+
+        // $("#reyCard").attr("src", "assets/images/cardback.jpg");
+
 
     }
 
-    // if you already have selected a character
-    else if(yourChar !== Characters[0] ) {
-
-        // and you also don't have a selected/living opponent
-        if (enemy === false) {
-
-            // you have selected an opponent (var enemy)
-            enemy = true;
-
-            // your opponent is Rey
-            enemyChar = Characters[0];
-
-            badguy = "Rey";
-
-            placeOpponent();
-
-            $("#reyCard").attr("src", "assets/images/cardback.jpg");
-
-
-            // (comfirming you have a selected enemy and who it is)
-            console.log("Enemy Rey:" + enemy);
-            console.log(enemyChar);
-
-        };
-
-    };
-
 });
 
-// };
 
 // the following 3 run on the same code as above.
 $("#Yoda").on("click", function() {
@@ -157,31 +141,18 @@ $("#Yoda").on("click", function() {
 
         placeFighter()
 
+        $("#char-list-1").css("display", "none");
+
+        $("#ReyChar").show();
+
+        $("#KyloChar").show();
+
+        $("#BobaChar").show();
+
         $("#yodaCard").attr("src", "assets/images/cardback.jpg");
 
 
     }
-
-    else if(yourChar !== Characters[1]) {
-
-        if (enemy === false) {
-
-            enemy = true;
-
-            enemyChar = Characters[1];
-
-            badguy = "Yoda";
-
-            placeOpponent();
-
-            $("#yodaCard").attr("src", "assets/images/cardback.jpg");
-
-            console.log("Enemy Yoda:" + enemy);
-            console.log(enemyChar);
-
-        };
-
-    };
 
 });
 
@@ -201,12 +172,118 @@ $("#Kylo").on("click", function() {
 
         placeFighter();
 
+        $("#char-list-1").css("display", "none");
+
         $("#kyloCard").attr("src", "assets/images/cardback.jpg");
+
+        $("#ReyChar").show();
+
+        $("#YodaChar").show();
+
+        $("#BobaChar").show();
 
 
     }
 
-    else if(yourChar !== Characters[2]) {
+});
+
+$("#Boba").on("click", function() {
+
+    if (selected === false) {
+
+        selected = true;
+
+        console.log("Selected Boba:" + selected);
+
+        yourChar = Characters[3];
+
+        console.log(yourChar);
+
+        name = "Boba";
+
+        placeFighter();
+
+        $("#char-list-1").css("display", "none");
+
+        $("#bobaCard").attr("src", "assets/images/cardback.jpg");
+
+        $("#ReyChar").show();
+
+        $("#YodaChar").show();
+
+        $("#KyloChar").show();
+
+
+    }
+
+});
+
+
+
+// selecting your enemy:
+
+$("#BadRey").on("click", function() {
+
+    // if you already have selected a character
+    if(yourChar !== Characters[0] ) {
+
+        // and you also don't have a selected/living opponent
+        if (enemy === false) {
+
+            // you have selected an opponent (var enemy)
+            enemy = true;
+
+            // your opponent is Rey
+            enemyChar = Characters[0];
+
+            badguy = "Rey";
+
+            placeOpponent();
+
+            $("#reyCard2").attr("src", "assets/images/cardback.jpg");
+
+
+            // (comfirming you have a selected enemy and who it is)
+            console.log("Enemy Rey:" + enemy);
+            console.log(enemyChar);
+
+        };
+
+    };
+
+});
+
+// };
+
+// the following 3 run on the same code as above.
+$("#BadYoda").on("click", function() {
+    
+    if(yourChar !== Characters[1]) {
+
+        if (enemy === false) {
+
+            enemy = true;
+
+            enemyChar = Characters[1];
+
+            badguy = "Yoda";
+
+            placeOpponent();
+
+            $("#yodaCard2").attr("src", "assets/images/cardback.jpg");
+
+            console.log("Enemy Yoda:" + enemy);
+            console.log(enemyChar);
+
+        };
+
+    };
+
+});
+
+$("#BadKylo").on("click", function() {
+
+    if(yourChar !== Characters[2]) {
 
         if (enemy === false) {
 
@@ -230,28 +307,9 @@ $("#Kylo").on("click", function() {
 
 });
 
-$("#Boba").on("click", function() {
+$("#BadBoba").on("click", function() {
 
-    if (selected === false) {
-
-        selected = true;
-
-        console.log("Selected Boba:" + selected);
-
-        yourChar = Characters[3];
-
-        console.log(yourChar);
-
-        name = "Boba";
-
-        placeFighter();
-
-        $("#bobaCard").attr("src", "assets/images/cardback.jpg");
-
-
-    }
-
-    else if(yourChar!== Characters[3]) {
+    if(yourChar!== Characters[3]) {
 
         if (enemy === false) {
 
@@ -263,7 +321,7 @@ $("#Boba").on("click", function() {
 
             placeOpponent();
 
-            $("#bobaCard").attr("src", "assets/images/cardback.jpg");
+            $("#bobaCard2").attr("src", "assets/images/cardback.jpg");
 
             console.log("Enemy Boba:" + enemy);
             console.log(enemyChar);
@@ -273,6 +331,8 @@ $("#Boba").on("click", function() {
     };
 
 });
+
+
 
 $("#attackButton").on("click", function() {
     if (selected === true) {
@@ -327,5 +387,10 @@ var loseCondition = function() {
 
     } 
 }
+
+
+
+
+
 // end of ready function. keep this.
 })
