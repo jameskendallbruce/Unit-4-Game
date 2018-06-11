@@ -108,7 +108,7 @@ $("#Rey").on("click", function() {
         // (confirming that you're playing as Rey)
         console.log(yourChar);
 
-        name = "Rey";
+        name = "rey";
 
         placeFighter();
 
@@ -141,7 +141,7 @@ $("#Yoda").on("click", function() {
 
         console.log(yourChar);
 
-        name = "Yoda";
+        name = "yoda";
 
         placeFighter()
 
@@ -172,7 +172,7 @@ $("#Kylo").on("click", function() {
 
         console.log(yourChar);
 
-        name = "Kylo";
+        name = "kylo";
 
         placeFighter();
 
@@ -203,7 +203,7 @@ $("#Boba").on("click", function() {
 
         console.log(yourChar);
 
-        name = "Boba";
+        name = "boba";
 
         placeFighter();
 
@@ -240,7 +240,7 @@ $("#BadRey").on("click", function() {
             // your opponent is Rey
             enemyChar = Characters[0];
 
-            badguy = "Rey";
+            badguy = "rey";
 
             placeOpponent();
 
@@ -270,7 +270,7 @@ $("#BadYoda").on("click", function() {
 
             enemyChar = Characters[1];
 
-            badguy = "Yoda";
+            badguy = "yoda";
 
             placeOpponent();
 
@@ -295,7 +295,7 @@ $("#BadKylo").on("click", function() {
 
             enemyChar = Characters[2];
 
-            badguy = "Kylo";
+            badguy = "kylo";
 
             placeOpponent();
 
@@ -321,7 +321,7 @@ $("#BadBoba").on("click", function() {
 
             enemyChar = Characters[3];
 
-            badguy = "Boba";
+            badguy = "boba";
 
             placeOpponent();
 
