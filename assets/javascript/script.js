@@ -55,8 +55,6 @@ var enemiesDefeated = 0;
 // how we represent our chosen fighter
 function placeFighter() {
 
-    $("#yourName").text(name);
-
     $("#Fighter").attr("src", "assets/images/" + name + ".jpg");
     
     $("#yourHP").text("HP: " + yourChar.HP);
@@ -74,8 +72,6 @@ function placeFighter() {
 };
 
 function placeOpponent() {
-
-    $("#enemyName").text(badguy)
 
     console.log("badguy is: " + badguy);
 
@@ -107,6 +103,8 @@ $("#Rey").on("click", function() {
 
         // (confirming that you're playing as Rey)
         console.log(yourChar);
+
+        $("#yourName").text("Rey");
 
         name = "rey";
 
@@ -141,6 +139,8 @@ $("#Yoda").on("click", function() {
 
         console.log(yourChar);
 
+        $("#yourName").text("Yoda");
+
         name = "yoda";
 
         placeFighter()
@@ -171,6 +171,8 @@ $("#Kylo").on("click", function() {
         yourChar = Characters[2];
 
         console.log(yourChar);
+
+        $("#yourName").text("Kylo Ren");
 
         name = "kylo";
 
@@ -203,6 +205,8 @@ $("#Boba").on("click", function() {
 
         console.log(yourChar);
 
+        $("#yourName").text("Boba Fett");
+
         name = "boba";
 
         placeFighter();
@@ -228,7 +232,7 @@ $("#Boba").on("click", function() {
 
 $("#BadRey").on("click", function() {
 
-    // if you already have selected a character
+    // if you already have selected a character. This was only really necessary in a previous versio of the code.
     if(yourChar !== Characters[0] ) {
 
         // and you also don't have a selected/living opponent
@@ -239,6 +243,8 @@ $("#BadRey").on("click", function() {
 
             // your opponent is Rey
             enemyChar = Characters[0];
+
+            $("#enemyName").text("Rey");
 
             badguy = "rey";
 
@@ -270,6 +276,9 @@ $("#BadYoda").on("click", function() {
 
             enemyChar = Characters[1];
 
+            $("#enemyName").text("Yoda");
+
+
             badguy = "yoda";
 
             placeOpponent();
@@ -295,6 +304,9 @@ $("#BadKylo").on("click", function() {
 
             enemyChar = Characters[2];
 
+            $("#enemyName").text("Kylo Ren");
+
+
             badguy = "kylo";
 
             placeOpponent();
@@ -313,13 +325,16 @@ $("#BadKylo").on("click", function() {
 
 $("#BadBoba").on("click", function() {
 
-    if(yourChar!== Characters[3]) {
+    if(yourChar !== Characters[3]) {
 
         if (enemy === false) {
 
             enemy = true;
 
             enemyChar = Characters[3];
+
+            $("#enemyName").text("Boba Fett");
+
 
             badguy = "boba";
 
