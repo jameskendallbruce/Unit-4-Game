@@ -302,7 +302,7 @@ $("#BadKylo").on("click", function() {
             console.log("Enemy Kylo:" + enemy);
             console.log(enemyChar);
 
-            $("#kyloCard").attr("src", "assets/images/cardback.jpg");
+            $("#kyloCard2").attr("src", "assets/images/cardback.jpg");
 
 
         };
