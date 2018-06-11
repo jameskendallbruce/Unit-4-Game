@@ -65,6 +65,8 @@ function placeFighter() {
 
     console.log("Base Attack: " + baseAttack);
 
+    console.log("Name is: " + name);
+
     $("#instructions").text("Choose an Opponent.")
 
     $("#initialInstructions").hide();
@@ -74,6 +76,8 @@ function placeFighter() {
 function placeOpponent() {
 
     $("#enemyName").text(badguy)
+
+    console.log("badguy is: " + badguy);
 
     $("#Opponent").attr("src", "assets/images/" + badguy + ".jpg");
     
